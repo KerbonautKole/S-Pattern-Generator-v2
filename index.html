@@ -23,8 +23,10 @@
       transition: background-color 0.4s ease;
     }
     body.paper-mode {
-      background-color: #e8e6df;
-      color: #1a1a1a;
+      background-color: #f7f5ef;
+      background-image: linear-gradient(to bottom, transparent 29px, #bde0fe 29px, #bde0fe 30px);
+      background-size: 100% 30px;
+      color: #1b3152;
     }
     #canvas-container {
       position: relative;
@@ -338,10 +340,7 @@
       }
       if (isPaperMode) {
         switch (palette) {
-          case 'cyan': return '#005f73';
-          case 'gold': return '#8b5e3c';
-          case 'matrix': return '#1b4332';
-          default: return '#222225';
+          return '#1a4480';
         }
       } else {
         switch (palette) {
